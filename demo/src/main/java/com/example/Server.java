@@ -9,7 +9,7 @@ import java.net.Socket;
 public class Server {
     public static void main(String[] args) {
         try {
-            ServerSocket ss = new ServerSocket(3000);
+            ServerSocket ss = new ServerSocket(8080);
             System.out.println("connessione al server locale...");
             Socket s = ss.accept();
             BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
